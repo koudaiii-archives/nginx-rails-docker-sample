@@ -1,0 +1,9 @@
+nginx:
+  build: .
+  environment:
+    BLUE_URL: 192.168.99.1
+    BLUE_PORT: 3001
+    GREEN_URL: 192.168.99.1
+    GREEN_PORT: 3002
+  ports:
+    - '8000:80'
